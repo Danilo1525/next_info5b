@@ -13,8 +13,8 @@ export default function Menu() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/esportes">Esportes</Nav.Link>
-            <Nav.Link href="/noticias">Notícias</Nav.Link>
-            <NavDropdown title="ReactHooks" id="basic-nav-dropdown">
+            <Nav.Link href="/noticias">Noticias</Nav.Link>
+            <NavDropdown title="ReactHook´s" id="basic-nav-dropdown">
               <NavDropdown.Item href="/usestate">UseState</NavDropdown.Item>
               <NavDropdown.Item href="/useeffect">UseEffect</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -22,6 +22,9 @@ export default function Menu() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Noticias" id="noticias">
+              <NavDropdown.Item href="/cadastros/cadnoticia">Cadastro Notícias</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

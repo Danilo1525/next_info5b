@@ -1,7 +1,5 @@
 export default function Esportes() {
-  return (
-    <>
-      <h1>Esportes</h1>
+    return <>
+        <h1>Esportes</h1>
     </>
-  );
 }

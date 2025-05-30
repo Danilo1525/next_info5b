@@ -1,7 +1,10 @@
+
 export default function Home() {
   return <>
-  <h1>
-    <p>Bem vindo</p>
+    <h1>
+      {4+2}
+      <p>Bem Vindos</p>
+
     </h1>
   </>
 }
