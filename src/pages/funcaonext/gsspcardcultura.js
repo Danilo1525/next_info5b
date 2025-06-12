@@ -1,7 +1,6 @@
-import {  Container, Row } from "react-bootstrap"
+import { Card, Col, Container, Row } from "react-bootstrap"
 import { noticias } from "../api/noticias/noticias"
 import {styles} from '../../styles/Ggsspcard.module.css'
-import Cards from "../components/cards"
 
 export async function getServerSideProps() {
     // Fetch data from external API
@@ -10,7 +9,7 @@ export async function getServerSideProps() {
     // Pass data to the page via props
     return { props: { repo } }
 }
-export default function Gsspcard({ repo }) {
+export default function Gsspcardcultura({ repo }) {
     return (<>
         <Container className="text-center">
             <h1>getServerSideProps-2 Example</h1>
@@ -23,11 +22,17 @@ export default function Gsspcard({ repo }) {
             <Row xs={1} md={3}>
                 {Array.isArray(noticias) ?
                     noticias.map(noticia => (
-                      <Cards idnoticia={noticia.idnoticia}
-                      conteudonoticia={noticia.conteudonoticia}
-                      titulonoticia={noticia.titulonoticia}
-                      datahoracadastro = {noticia.datahoracadastro}
-                      tiponoticia = {noticia.tiponoticia}/>
+                        (noticia.tiponoticia === "cultura"?
+                        <Col key={noticia.idnoticia}>
+                            <Card>
+                                <Card.Header className="text-center fw-bold"> {noticia.titulonoticia}</Card.Header>
+                                <Card.Body>
+                                    <Card.Title className="text-capitalize">{noticia.tiponoticia}</Card.Title>
+                                    <Card.Text>{noticia.conteudonoticia}</Card.Text>
+                                </Card.Body>
+                                <Card.Footer>{noticia.datahoracadastro}</Card.Footer>
+                            </Card>
+                        </Col>:null)
                     ))
                     : "não"}
             </Row>
