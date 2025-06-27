@@ -4,9 +4,9 @@ export default function Cards(noticia) {
     return <>
         <Col key={noticia.idnoticia}>
             <Card>
-                <Card.Header className="text-center fw-bold bg-primary"> {noticia.titulonoticia}</Card.Header>
+                <Card.Header className="text-center fw-bold bg-success-subtle"> {noticia.titulonoticia}</Card.Header>
                 <Card.Body>
-                    <Card.Title className="text-capitalize">{noticia.tiponoticia}</Card.Title>
+                    <Card.Title className="text-capitalize fst-italic">{noticia.tiponoticia}</Card.Title>
                     <Card.Text>{noticia.conteudonoticia}</Card.Text>
                 </Card.Body>
                 <Card.Footer>{noticia.datahoracadastro}</Card.Footer>
