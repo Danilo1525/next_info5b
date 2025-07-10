@@ -1,4 +1,9 @@
-.menudegrade{
-background: #0900b5;
-background: linear-gradient(193deg, rgba(9, 0, 181, 1) 0%, rgba(14, 14, 181, 1) 32%, rgba(0, 212, 255, 1) 100%);
+.menudegrade {
+  background: #2785e3;
+  background: linear-gradient(
+    180deg,
+    rgb(84, 142, 200) 0%,
+    rgba(9, 9, 121, 1) 83%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
