@@ -24,3 +24,4 @@ export default function Home({ noticias }) {
     </Container>
   </>
 }
+// src/pages/index.js
