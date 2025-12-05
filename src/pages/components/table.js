@@ -145,16 +145,16 @@ export default function Tablelist(props) {
                 </td>
                 <td>
                     <a
-                        href="#"
-                       onClick={(e) => {
-    delNoticiaRequest(
-        props.idnoticia,
-        setResultadoCadastro,
-        setShowDel
-    )(e); // <-- AGORA CHAMA A FUNÇÃO RETORNADA
-}}
+    href="#"
+    onClick={() => {
+        delNoticiaRequest(
+            props.idnoticia,
+            setResultadoCadastro,
+            setShowDel
+        );
+    }}
+>
 
-                    >
                         delete
                     </a>
                 </td>
